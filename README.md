@@ -4,12 +4,17 @@ main.py pulls a Docker image with VQGAN + CLIP installed from https://github.com
 
 Requirements:
 Windows
+
 Docker Desktop.  For installation instructions please see https://docs.docker.com/desktop/windows/install/
+
 Python.  I'm using 3.10 in a virtual environemnt and haven't tried anything else.
 
 Use instructions:
+
 (optional) Create and activate a new Python virtual environment
+
 pip install -r requirements.txt
+
 python main.py
 
 This should bring up a command prompt.  main.py will automatically check for, pull, and start the necessary Docker image.  Once main.py finishes starting the Docker image you will be able to enter prompts.  They will be stored in a queue and generated in the order you entered them.  Finished images will be copied to your Downlaods directory and named using the prompt which generated the image
